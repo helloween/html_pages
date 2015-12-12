@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -16,16 +18,15 @@
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <!-- 1920 375 -->
-    <!-- 20% 60% 20% -->
+
     <header>
       <nav>
         <div class='grid'>
           <div class="col-2"></div>
-          <div class="col-2" style='border: 1px solid red;'>Site Name</div>
-          <div class="col-6" style='border: 1px solid red;'>
+          <div class="col-2">Site Name</div>
+          <div class="col-6">
             <ul>
-              <li>Home</li>
+              <li class='selected'>Home</li>
               <li>About</li>
               <li>Services</li>
               <li>Project</li>
@@ -136,7 +137,137 @@
       </div>
     </section>
 
-    <footer></footer>
+    <section id="feedbacks">
+      <div class="grid">
+        <div class="col-2"></div>
+        <div class="col-4 feedback">
+          <div class="photo">
+            <img src="img/image1.png" alt="">
+          </div>
+<!--           <div class="message">
+            <p class="title">Lorem ipsum</p>
+            <p class="text">
+              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+            </p>
+          </div> -->
+        </div>
+        <div class="col-4 feedback">
+          <div class="photo">
+            <img src="img/image1.png" alt="">
+          </div>
+          <div class="message">
+            <p class="title">Lorem ipsum</p>
+            <p class="text">
+              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+            </p>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="grid">
+        <div class="col-2"></div>
+        <div class="col-4 feedback">
+          <div class="photo">
+            <img src="img/image1.png" alt="">
+          </div>
+          <div class="message">
+            <p class="title">Lorem ipsum</p>
+            <p class="text">
+              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+            </p>
+          </div>
+        </div>
+        <div class="col-4 feedback">
+          <div class="photo">
+            <img src="img/image1.png" alt="">
+          </div>
+          <div class="message">
+            <p class="title">Lorem ipsum</p>
+            <p class="text">
+              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+            </p>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </section>
+
+    <section id="subscribing">
+      <div class="grid">
+        <div class="col-12 subscribing">
+          <div class="grid header">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="message">
+                <div class="title">Cras ornare tristique elit</div>
+                <div class="text">Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis.</div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <div class="grid">
+            <div class="col-2"></div>
+            <div class="col-4 signing-up">
+              <div class="message">
+                <div class="title">Subscribe Our Newsletter</div>
+                <div class="text">via email on how to grow your business online</div>
+              </div>
+              <div class="email-form">
+                <input type="text" class="input">
+              </div>
+            </div>
+            <div class="col-4 twitter">
+              <div class="message">
+                <div class="text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis  euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat  <span>@johndoe</span></div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social">
+      <div class="grid">
+        <div class="col-12 social">
+          <div class="grid">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="grid">
+                <div class="col-4">
+                  <button class="rounded-button"></button>
+                  <div class="message">
+                    <div class="title">Follow us on Facebook</div>
+                    <div class="text">Faucibus toroot menuts</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <button class="rounded-button"></button>
+                  <div class="message">
+                    <div class="title">Follow us on Google +</div>
+                    <div class="text">Faucibus toroot menuts</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <button class="rounded-button"></button>
+                  <div class="message">
+                    <div class="title">Follow us on LinkedIn</div>
+                    <div class="text">Faucibus toroot menuts</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid footer">
+        <div class="col-12"></div>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
