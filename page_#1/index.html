@@ -21,38 +21,74 @@
 
     <header>
       <nav>
-        <div class='grid'>
+        <div class='grid header'>
           <div class="col-2"></div>
-          <div class="col-2">Site Name</div>
+          <div class="col-2 logo">Site Name</div>
           <div class="col-6">
-            <ul>
-              <li class='selected'>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Project</li>
-              <li>Blog</li>
-              <li>Contact</li>
+            <ul class='menu'>
+              <li class='item selected'><a url="#">Home</a></li>
+              <li class='item'><a url="#">About</a></li>
+              <li class='item'><a url="#">Services</a></li>
+              <li class='item'><a url="#">Project</a></li>
+              <li class='item'><a url="#">Blog</a></li>
+              <li class='item'><a url="#">Contact</a></li>
             </ul>
           </div>
           <div class="col-2"></div>
         </div>
         <div class='grid'>
-          <div class="col-2"></div>
-          <div class="col-8 banner" style='border: 1px solid red;'>
-            
+          <div class="col-12 banner">
           </div>
-          <div class="col-2"></div>
         </div>
       </nav>
     </header>
 
-    <section class="tiles">
-      <div class='grid'>
+    <section id="tiles-text">
+      <div class="grid tiles-header">
+        <div class="col-12">
+          <div class="message">
+            <div class="title">
+              Lorem ipsum dolor sit amet
+            </div>
+            <div class="text">
+              Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiles">
+      <div class='grid tiles'>
         <div class="col-2"></div>
         <div class="col-8">
           <div class="grid">
             <div class="col-3 item">
-              <div class='icon'></div>
+              <div class='icon'></div>
+              <div class='desc'>
+                <p class="title">
+                  Nunc dignissim
+                </p>
+                <p class="text">
+                  Praesent dapibus, neque id curs
+                  us faucibus, tortor neque egestas augue, eu vulputate magn
+                </p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div class='icon'></div>
+              <div class='desc'>
+                <p class="title">
+                  Aliquam tinci
+                </p>
+                <p class="text">
+                  Donec consectetuer ligula v
+tate sem tristique cursus. Nam nulla quam, gravida info
+                </p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div class='icon'></div>
               <div class='desc'>
                 <p class="title">
                   lorem ipsum
@@ -63,29 +99,7 @@
               </div>
             </div>
             <div class="col-3 item">
-              <div class='icon'></div>
-              <div class='desc'>
-                <p class="title">
-                  lorem ipsum
-                </p>
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </div>
-            </div>
-            <div class="col-3 item">
-              <div class='icon'></div>
-              <div class='desc'>
-                <p class="title">
-                  lorem ipsum
-                </p>
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </div>
-            </div>
-            <div class="col-3 item">
-              <div class='icon'></div>
+              <div class='icon'></div>
               <div class='desc'>
                 <p class="title">
                   lorem ipsum
@@ -109,27 +123,31 @@
       <div class="grid portfolio">
         <div class="col-2"></div>
         <div class="col-8">
-          <p class="title">Lorem ipsum</p>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+          <div class="title">Cras ornare tristique elit</div>
+          <div class="desc">Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis.</div>
+          <div class="arrows">
+            <span class="back fa-arrow-circle-left"></span>
+            <span class="forward fa-arrow-circle-right"></span>
+          </div>
 
           <div class="grid images">
             <div class="col-3 item">
-              <img src="img/gallery-picture.png" alt="">
+              <img src="img/gallery/image1.png" alt="">
             </div>
             <div class="col-3 item">
-              <img src="img/gallery-picture.png" alt="">
+              <img src="img/gallery/image2.png" alt="">
             </div>
             <div class="col-3 item">
-              <img src="img/gallery-picture.png" alt="">
+              <img src="img/gallery/image3.png" alt="">
             </div>
             <div class="col-3 item">
-              <img src="img/gallery-picture.png" alt="">
+              <img src="img/gallery/image4.png" alt="">
             </div>
           </div>
 
           <div class="grid">
-            <div class="col-12">
-              <div class="button large">View Portfolio</div>
+            <div class="col-12 button">
+              <button class="btn large">View Portfolio</button>
             </div>
           </div>
         </div>
@@ -142,18 +160,18 @@
         <div class="col-2"></div>
         <div class="col-4 feedback">
           <div class="photo">
-            <img src="img/image1.png" alt="">
+            <img src="img/persons/person1.png" alt="">
           </div>
-<!--           <div class="message">
-            <p class="title">Lorem ipsum</p>
+          <div class="message">
+            <p class="title">Integer vitae libero</p>
             <p class="text">
-              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+              Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor  + more
             </p>
-          </div> -->
+          </div>
         </div>
         <div class="col-4 feedback">
           <div class="photo">
-            <img src="img/image1.png" alt="">
+            <img src="img/persons/person2.png" alt="">
           </div>
           <div class="message">
             <p class="title">Lorem ipsum</p>
@@ -168,7 +186,7 @@
         <div class="col-2"></div>
         <div class="col-4 feedback">
           <div class="photo">
-            <img src="img/image1.png" alt="">
+            <img src="img/persons/person3.png" alt="">
           </div>
           <div class="message">
             <p class="title">Lorem ipsum</p>
@@ -179,7 +197,7 @@
         </div>
         <div class="col-4 feedback">
           <div class="photo">
-            <img src="img/image1.png" alt="">
+            <img src="img/persons/person4.png" alt="">
           </div>
           <div class="message">
             <p class="title">Lorem ipsum</p>
@@ -265,7 +283,9 @@
 
     <footer>
       <div class="grid footer">
-        <div class="col-12"></div>
+        <div class="col-12 copyright">
+          Designed by: www.alltemplateneeds.com / Images from: www.wallpaperswide.com / www.photorack.net Copyright(c) website name. 
+        </div>
       </div>
     </footer>
 

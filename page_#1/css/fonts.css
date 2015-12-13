@@ -12,3 +12,8 @@
   font-family: 'SourceSansPro-Light';
   src: url('../fonts/source-sans-pro/SourceSansPro-Light.otf');
 }
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('../fonts/source-sans-pro/SourceSansPro-Black.otf');
+}

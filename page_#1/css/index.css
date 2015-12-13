@@ -1,7 +1,7 @@
 .grid {
   width: 100%;
-  margin-right: -15px;
-  margin-left: -15px;
+/*  margin-right: -15px;
+  margin-left: -15px;*/
 }
 
 .grid:after {
@@ -53,70 +53,107 @@
   width: calc(100%/12);
 }
 
+.btn {
+  border: none;
+  text-align: center;
+  outline: 0;
+}
 
-ul {
+
+.header {
+  color: #637f83;
+}
+
+.header .logo {
+  font-family: 'SourceSansPro-Black';
+  font-size: 32px;
+}
+
+.header .menu {
   font-family: 'SourceSansPro-Bold';
   font-size: 16px;
-  color: #637f83;
   text-transform: uppercase;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: right;
 }
 
-ul li {
-  display: inline;
+.header .menu .item {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-ul li.selected {
+.header .menu .item.selected {
   color: #e4551d;
 }
 
-ul li.selected::before {
+.header .menu .item.selected a::before {
+  content: "";
   display: table;
-  /*text-align: center;*/
   margin: 0 auto;
-  content: "\f083";
-  font-size: 15px;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  font-family: FontAwesome;
 }
 
 .banner {
-  background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+  background: transparent url('../img/background.png') 0 0 no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 520px;
+}
+
+
+
+/*.tiles {
+  margin: 25px 0;
+}*/
+
+.tiles-header .message {
+  text-align: center;
+  color: #637f83;
+}
+
+.tiles-header .message .title {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 34px;
+}
+
+.tiles-header .message .text {
+  font-family: 'SourceSansPro-Light';
+  font-size: 24px;
 }
 
 .tiles {
-  margin: 25px 0;
+  background-color: #f6f6f6;
 }
 
-.item {
+.tiles .item {
   text-align: center;
   margin: 0;
   border: none;
+  color: #637f83;
 }
 
-.item .icon {
-  background: transparent url('../img/70x70.jpg') 0 0 no-repeat fixed;
-  background-size: cover;
-  margin: 0 auto;
-  height: 70px;
-  width: 70px;
+.tiles .item .icon {
+  font-family: FontAwesome;
+  font-size: 66px;
+  color: #e4551d;
 }
 
-.item .desc {
+.tiles .item .desc {
   margin: 15px;
 }
 
-.item .desc .title {
-  font-size: 1.5em;
+.tiles .item .desc .title {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 22px;
   text-align: center;
 }
 
-.item .desc .text {
+.tiles .item .desc .text {
+  font-family: 'SourceSansPro-Regular';
   line-height: 1.5em;
-  font-size: 0.8em;
+  font-size: 14px;
 }
 
 
@@ -126,33 +163,56 @@ ul li.selected::before {
 }
 
 
+
 .portfolio {
   text-align: center;
+  color: #637f83;
 }
 
-.portfolio .images .item {
-  padding: 15px;
+.portfolio .title {
+  font-family: 'SourceSansPro-Bold';
+  font-size: 34px;
 }
 
-.button {
+.portfolio .text {
+  font-family: 'SourceSansPro-Light';
+  font-size: 24px;
+}
+
+.portfolio .arrows {
+  font-family: FontAwesome;
+  font-size: 22px;
+  color: #e4551d;
+}
+
+.portfolio .arrows .back,
+.portfolio .arrows .forward {
+  cursor: pointer;
+}
+
+.portfolio .images {
+  
+}
+
+.portfolio .images .item img {
+  height: 170px;
+  width: 270px;
+  /*padding: 15px;*/
+}
+
+.portfolio .button .large {
+  height: 40px;
+  width: 150px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  padding: 15px;
-  text-align: center;
-  word-wrap: none;
+  background-color: #e4551d;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 18px;
+  color: #fff;
 }
 
-.button.small {
-  width: 15px;
-  background-color: #ccc;
-}
 
-.button.large {
-  max-width: 50px;
-  /*max-width: auto;*/
-  background-color: red;
-}
 
 .feedback {
   overflow: hidden;
@@ -183,14 +243,16 @@ ul li.selected::before {
 }
 
 .feedback .message {
+  float: left;
   /*clear: both;*/
   /*margin: 10px;*/
   margin: 0;
-  width: 80%;
+  width: 69%;
   /*margin-top: -20px;*/
 }
 
 .feedback .message .title {
+  margin: 0;
   font-family: 'SourceSansPro-Bold';
   font-size: 22px;
   color: #637f83;
@@ -202,6 +264,7 @@ ul li.selected::before {
   font-size: 14px;
   color: #959494;
 }
+
 
 
 .subscribing {
@@ -295,7 +358,6 @@ ul li.selected::before {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 32px;
   border: none;
-  outline: 0;
 }
 
 .social .message {
@@ -317,5 +379,13 @@ ul li.selected::before {
 
 .footer {
   background-color: #637f83;
-  height: 45px;
+  height: 91px;
+  line-height: 91px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #fff;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 14px;
 }
