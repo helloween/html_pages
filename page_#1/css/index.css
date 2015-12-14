@@ -156,6 +156,18 @@
   font-size: 14px;
 }
 
+.tiles .button .small {
+  height: 32px;
+  width: 70px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #637f83;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 18px;
+  color: #fff;
+}
+
 
 .line {
   height: 15px;
@@ -265,6 +277,9 @@
   color: #959494;
 }
 
+.feedback .message .text .more {
+  color: #e4551d;
+}
 
 
 .subscribing {
@@ -287,7 +302,14 @@
   font-size: 24px;
 }
 
+.subscribing .signing-up {
+  padding-right: 15px;
+  height: 103px;
+}
+
 .subscribing .signing-up .message {
+  /*padding: 10px;*/
+  margin-bottom: 10px;
   color: white;
 }
 
@@ -314,14 +336,37 @@
 
 .subscribing .signing-up .email-form .input {
   border: none;
-  width: 100%;
+  width: 80%;
   height: 40px;
   background-color: #597275;
 }
 
+.subscribing .signing-up .email-form .middle {
+  float: right;
+  height: 43px;
+  width: 100px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #597275;
+  font-family: 'SourceSansPro-Bold';
+  font-size: 18px;
+  color: #fff;
+}
+
+.subscribing .twitter {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-left: 15px;
+  background-color: #597275;
+  height: 103px;
+}
+
 .subscribing .twitter .message {
   padding: 15px;
-  background-color: #597275;
+  /*background-color: #597275;*/
+  /*height: 103px;*/
 }
 
 .subscribing .twitter .message::before {
@@ -340,11 +385,27 @@
   color: #b5c7c9;
 }
 
+.subscribing .twitter .message .text .link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+}
+
+
 
 .social {
   background-color: white;
   height: 132.6px;
+  /*line-height: 132.6px;*/
   color: white;
+  /*display: table;*/
+}
+
+.social .block {
+  height: 132.6px;
+  line-height: 132.6px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .social .rounded-button {
@@ -355,13 +416,16 @@
   -moz-border-radius: 35px;
   /*text-align: center;*/
   background-color: #e4551d;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 32px;
+  font: normal normal normal 32px FontAwesome;
+  /*font-size: 32px;*/
   border: none;
+  float: left;
+  position: relative;
+  top: 20%;
 }
 
-.social .message {
-
+.social .block .message {
+  float: left;
 }
 
 .social .message .title {
@@ -375,6 +439,7 @@
   font-size: 14px;
   color: #b5c7c9;
 }
+
 
 
 .footer {
