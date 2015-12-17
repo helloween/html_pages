@@ -243,23 +243,8 @@ a {
 
 
 .feedback {
-  overflow: hidden;
-  /*min-height: 100%;*/
-  /*vertical-align: middle;*/
-  /*display: inline-block;*/
-
-}
-
-.feedback .photo {
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  /*display: inline;*/
-/*  margin: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  display: inline-block;*/
+  padding-top: 110px;
+  padding-bottom: 55px;
 }
 
 .feedback::before {
@@ -270,7 +255,24 @@ a {
   vertical-align: middle;
 }
 
-.feedback .message {
+.feedback .item {
+  padding-left: 8px;
+}
+
+.feedback .item .photo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  margin-right: 32px;
+  /*display: inline;*/
+/*  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  display: inline-block;*/
+}
+
+.feedback .item .message {
   float: left;
   /*clear: both;*/
   /*margin: 10px;*/
@@ -279,7 +281,7 @@ a {
   /*margin-top: -20px;*/
 }
 
-.feedback .message .title {
+.feedback .item .message .title {
   margin: 0;
   font-family: 'SourceSansPro-Bold';
   font-size: 22px;
@@ -287,15 +289,17 @@ a {
   margin-bottom: 2px;
 }
 
-.feedback .message .text {
+.feedback .item .message .text {
+  line-height: 25px;
   font-family: 'SourceSansPro-Regular';
   font-size: 14px;
   color: #959494;
 }
 
-.feedback .message .text .more {
+.feedback .item .message .text .more {
   color: #e4551d;
 }
+
 
 
 .subscribing {
@@ -411,46 +415,47 @@ a {
 
 .social {
   background-color: white;
-  height: 132.6px;
-  /*line-height: 132.6px;*/
+/*  height: 132.6px;
+  line-height: 132.6px;*/
   color: white;
   /*display: table;*/
 }
 
-.social .block {
-  height: 132.6px;
-  line-height: 132.6px;
-  display: table-cell;
-  vertical-align: middle;
+.social .item {
+/*  height: 132.6px;
+  line-height: 132.6px;*/
+/*  display: table-cell;
+  vertical-align: middle;*/
 }
 
-.social .rounded-button {
+.social .item .button {
   float: left;
+  border: 1px solid red;
+  margin-right: 15px;
+  
+}
+
+.social .item .button .rounded-button {
   width: 70px;
   height: 70px;
   border-radius: 35px;
   -moz-border-radius: 35px;
-  /*text-align: center;*/
   background-color: #e4551d;
   font: normal normal normal 32px FontAwesome;
-  /*font-size: 32px;*/
   border: none;
-  float: left;
-  position: relative;
-  top: 20%;
 }
 
-.social .block .message {
-  float: left;
+.social .item .message {
+  /*float: left;*/
 }
 
-.social .message .title {
+.social .item .message .title {
   font-family: 'SourceSansPro-Bold';
   font-size: 18px;
   color: #637f83;
 }
 
-.social .message .text {
+.social .item .message .text {
   font-family: 'SourceSansPro-Regular';
   font-size: 14px;
   color: #b5c7c9;
