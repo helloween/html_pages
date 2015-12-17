@@ -181,10 +181,10 @@ a {
 }
 
 
-.line {
+/*.line {
   height: 15px;
   background-color: black;
-}
+}*/
 
 
 
@@ -193,12 +193,16 @@ a {
   color: #637f83;
 }
 
-.portfolio .title {
+.portfolio .message {
+  padding: 60px 0 28px;
+}
+
+.portfolio .message .title {
   font-family: 'SourceSansPro-Bold';
   font-size: 34px;
 }
 
-.portfolio .text {
+.portfolio .message .text {
   font-family: 'SourceSansPro-Light';
   font-size: 24px;
 }
@@ -215,7 +219,7 @@ a {
 }
 
 .portfolio .images {
-  
+  padding: 42px 0 40px;
 }
 
 .portfolio .images .item img {
