@@ -17,3 +17,13 @@
   font-family: 'SourceSansPro-Black';
   src: url('../fonts/source-sans-pro/SourceSansPro-Black.otf');
 }
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../fonts/PTSans/PTSansBold/PTSansBold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/lato/Lato-Regular.ttf');
+}

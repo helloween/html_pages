@@ -5,8 +5,6 @@ a {
 
 .grid {
   width: 100%;
-/*  margin-right: -15px;
-  margin-left: -15px;*/
 }
 
 .grid:after {
@@ -19,7 +17,6 @@ a {
   float: left;
   box-sizing: border-box;
   min-height: 1px;
-  /*padding-right: 30px;*/
 }
 
 .col-12 {
@@ -58,38 +55,49 @@ a {
   width: calc(100%/12);
 }
 
+
+
 .btn {
   border: none;
   text-align: center;
   outline: 0;
 }
 
+.rounded-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  -moz-border-radius: 35px;
+  -webkit-border-radius: 35px;
+  border: none;
+  background-color: #e4551d;
+  font: 32px FontAwesome;
+  color: #fff;
+}
+
+
 
 .header {
-  padding: 32px 0 34px;
+  padding: 22px 0 24px;
   color: #637f83;
 }
 
 .header .logo {
-  font-family: 'SourceSansPro-Black';
-  font-size: 32px;
+  font: 32px 'SourceSansPro-Black';
 }
 
 .header .menu {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 16px;
-  text-transform: uppercase;
-  list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: right;
+  font: 16px 'SourceSansPro-Bold';
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 .header .menu .item {
   display: inline-block;
-  margin-left: 47px;
-  /*border: 1px solid red;*/
-  margin-top: -7px;
+  margin: -7px 0 0 47px;
 }
 
 .header .menu .item .selected {
@@ -100,34 +108,70 @@ a {
   content: "";
   display: table;
   margin: 0 auto;
-  font-size: 16px;
-  font-family: FontAwesome;
+  font: 16px FontAwesome;
   color: #637f83;
 }
 
+
+
 .banner {
-  background: transparent url('../img/background.png') 0 0 no-repeat;
-  background-size: cover;
   height: 520px;
+  background: transparent url('../img/banner.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.banner .message {
+  margin-top: 107px;
+  text-align: center;
+  color: #fff;
+}
+
+.banner .message .title {
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.banner .message .title .underline {
+  border-bottom: 2px solid #fff;
+  font: 40px 'PTSans-Bold';
+}
+
+.banner .message .title .underline .line {
+  position: relative;
+  top: 5px;
+  padding: 0;
+}
+
+.banner .message .text {
+  margin-top: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 16px 'Lato-Regular';
+}
+
+.banner .message .text .line {
+  margin-bottom: 8px;
+}
+
+.banner .button {
+  text-align: center;
+  padding-top: 30px;
 }
 
 
 
 .tiles-header .message {
-  padding-top: 40px;
-  padding-bottom: 45px;
+  padding: 40px 0 45px 0;
   text-align: center;
   color: #637f83;
 }
 
 .tiles-header .message .title {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 34px;
+  font: 34px 'SourceSansPro-Bold';
 }
 
 .tiles-header .message .text {
-  font-family: 'SourceSansPro-Light';
-  font-size: 24px;
+  font: 24px 'SourceSansPro-Light';
 }
 
 .tiles {
@@ -147,25 +191,21 @@ a {
 }
 
 .tiles .item .icon {
-  font-family: FontAwesome;
-  font-size: 66px;
+  font: 66px FontAwesome;
   color: #e4551d;
 }
 
 .tiles .item .desc {
-  margin: 0 60px 15px;
+  margin: 0 50px 15px;
 }
 
 .tiles .item .desc .title {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 22px;
+  font: 22px 'SourceSansPro-Bold';
   text-align: center;
 }
 
 .tiles .item .desc .text {
-  font-family: 'SourceSansPro-Regular';
-  line-height: 1.5em;
-  font-size: 14px;
+  font: 14px/1.5em 'SourceSansPro-Regular';
 }
 
 .tiles .button .small {
@@ -175,16 +215,9 @@ a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   background-color: #637f83;
-  font-family: 'SourceSansPro-Bold';
-  font-size: 18px;
+  font: 18px 'SourceSansPro-Bold';
   color: #fff;
 }
-
-
-/*.line {
-  height: 15px;
-  background-color: black;
-}*/
 
 
 
@@ -198,18 +231,15 @@ a {
 }
 
 .portfolio .message .title {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 34px;
+  font: 34px 'SourceSansPro-Bold';
 }
 
 .portfolio .message .text {
-  font-family: 'SourceSansPro-Light';
-  font-size: 24px;
+  font: 24px 'SourceSansPro-Light';
 }
 
 .portfolio .arrows {
-  font-family: FontAwesome;
-  font-size: 22px;
+  font: 22px FontAwesome;
   color: #e4551d;
 }
 
@@ -225,7 +255,6 @@ a {
 .portfolio .images .item img {
   height: 170px;
   width: 270px;
-  /*padding: 15px;*/
 }
 
 .portfolio .button .large {
@@ -263,36 +292,23 @@ a {
   float: left;
   width: 100px;
   height: 100px;
-  margin: 10px;
-  margin-right: 32px;
-  /*display: inline;*/
-/*  margin: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  display: inline-block;*/
+  margin: 10px 32px 10px 10px;
 }
 
 .feedback .item .message {
   float: left;
-  /*clear: both;*/
-  /*margin: 10px;*/
   margin: 0;
   width: 69%;
-  /*margin-top: -20px;*/
 }
 
 .feedback .item .message .title {
-  margin: 0;
-  font-family: 'SourceSansPro-Bold';
-  font-size: 22px;
+  margin: 0 0 2px 0;
+  font: 22px 'SourceSansPro-Bold';
   color: #637f83;
-  margin-bottom: 2px;
 }
 
 .feedback .item .message .text {
-  line-height: 25px;
-  font-family: 'SourceSansPro-Regular';
-  font-size: 14px;
+  font: 14px/1.8 'SourceSansPro-Regular';
   color: #959494;
 }
 
@@ -303,61 +319,53 @@ a {
 
 
 .subscribing {
-  background-color: #637f83;
   height: 338px;
+  background-color: #637f83;
 }
 
 .subscribing .header .message {
-  color: white;
+  padding-bottom: 42px;
   text-align: center;
+  color: white;
 }
 
 .subscribing .header .message .title {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 34px;
+  font: 34px 'SourceSansPro-Bold';
 }
 
 .subsribing .header .message .text {
-  font-family: 'SourceSansPro-Light';
-  font-size: 24px;
+  font: 24px 'SourceSansPro-Light';
 }
 
 .subscribing .signing-up {
-  padding-right: 15px;
   height: 103px;
+  padding: 0 15px 0 20px;
 }
 
 .subscribing .signing-up .message {
-  /*padding: 10px;*/
-  margin-bottom: 10px;
+  margin-bottom: 21px;
   color: white;
 }
 
 .subscribing .signing-up .message::before {
   content: '';
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 40px;
   float: left;
+  margin-right: 17px;
+  font: 40px FontAwesome;
 }
 
 .subscribing .signing-up .message .title {
-  font-family: 'SourceSansPro-Bold';
-  font-size: 18px;
+  font: 18px 'SourceSansPro-Bold';
 }
 
 .subscribing .signing-up .message .text {
-  font-family: 'SourceSansPro-Regular';
-  font-size: 14px;
-}
-
-.subscribing .signing-up .email-form {
-
+  font: 14px 'SourceSansPro-Regular';
 }
 
 .subscribing .signing-up .email-form .input {
-  border: none;
-  width: 80%;
+  width: 459px;
   height: 40px;
+  border: none;
   background-color: #597275;
 }
 
@@ -369,39 +377,30 @@ a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   background-color: #597275;
-  font-family: 'SourceSansPro-Bold';
-  font-size: 18px;
+  font: 18px 'SourceSansPro-Bold';
   color: #fff;
 }
 
-.subscribing .twitter {
+.subscribing .twitter .message {
+  margin: 0 55px 0 15px;
+  padding: 25px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  padding-left: 15px;
   background-color: #597275;
-  height: 103px;
-}
-
-.subscribing .twitter .message {
-  padding: 15px;
-  /*background-color: #597275;*/
-  /*height: 103px;*/
 }
 
 .subscribing .twitter .message::before {
   content: '';
-  margin-right: 15px;
-  font: normal normal normal 14px/1 FontAwesome;
-  /*font-family: FontAwesome;*/
-  font-size: 66px;
-  color: white;
   float: left;
+  margin-right: 15px;
+  padding-bottom: 20px;
+  font: 66px FontAwesome;
+  color: white;
 }
 
 .subscribing .twitter .message .text {
-  font-family: 'SourceSansPro-Regular';
-  font-size: 14px;
+  font: 14px 'SourceSansPro-Regular';
   color: #b5c7c9;
 }
 
@@ -416,33 +415,17 @@ a {
 .social {
   height: 132.6px;
   background-color: white;
-  color: white;
 }
 
 .social .item {
-/*  height: 132.6px;
-  line-height: 132.6px;*/
-/*  display: table-cell;
-  vertical-align: middle;*/
   position: relative;
   top: 20%;
+  padding-left: 18px;
 }
 
 .social .item .button {
   position: absolute;
-  float: left;
   top: 30%;
-  margin-right: 15px;
-}
-
-.social .item .button .rounded-button {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
-  -moz-border-radius: 35px;
-  background-color: #e4551d;
-  font: normal normal normal 32px FontAwesome;
-  border: none;
 }
 
 .social .item .message {
@@ -450,6 +433,7 @@ a {
   right: 0;
   width: 80%;
   padding-top: 10px;
+  left: 104px;
 }
 
 .social .item .message .title {
@@ -465,14 +449,12 @@ a {
 
 
 .footer {
-  background-color: #637f83;
   height: 91px;
-  line-height: 91px;
+  background-color: #637f83;
 }
 
 .footer .copyright {
   text-align: center;
+  font: 14px/91px 'SourceSansPro-Regular';
   color: #fff;
-  font-family: 'SourceSansPro-Regular';
-  font-size: 14px;
 }
